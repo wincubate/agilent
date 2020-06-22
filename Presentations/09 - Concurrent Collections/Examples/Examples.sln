@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01 - ConcurrentQueue", "01 - ConcurrentQueue\01 - ConcurrentQueue.csproj", "{E57F1326-576B-430F-AC29-1703F7DF7DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02 - BlockingCollection", "02 - BlockingCollection\02 - BlockingCollection.csproj", "{64491430-24C2-409A-B138-C2F37FAFFBDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E57F1326-576B-430F-AC29-1703F7DF7DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57F1326-576B-430F-AC29-1703F7DF7DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57F1326-576B-430F-AC29-1703F7DF7DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57F1326-576B-430F-AC29-1703F7DF7DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64491430-24C2-409A-B138-C2F37FAFFBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64491430-24C2-409A-B138-C2F37FAFFBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64491430-24C2-409A-B138-C2F37FAFFBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64491430-24C2-409A-B138-C2F37FAFFBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE03FDE1-3555-414A-8AB2-1F3D404CD662}
+	EndGlobalSection
+EndGlobal

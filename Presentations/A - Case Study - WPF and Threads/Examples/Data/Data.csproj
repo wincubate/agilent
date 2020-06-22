@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wincubate.Threading.CaseStudyA.Data</AssemblyName>
+    <RootNamespace>Wincubate.Threading.CaseStudyA.Data</RootNamespace>
+  </PropertyGroup>
+
+</Project>

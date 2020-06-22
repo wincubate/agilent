@@ -1,0 +1,11 @@
+﻿<Window x:Class="ThePowerOfThree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="The Power of Three" Height="295" Width="337">
+    <Image Source="Three.jpg"
+           Stretch="UniformToFill"
+           />
+</Window>
