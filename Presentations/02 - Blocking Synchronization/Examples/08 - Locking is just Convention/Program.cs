@@ -38,7 +38,7 @@ namespace Wincubate.Threading.Module02
                 lock (_counterAccessSyncObject)
                 {
                     temp = _counter;
-                    Thread.Sleep(1);
+                    Thread.Sleep(3);
                     temp++;
                     _counter = temp;
                 }

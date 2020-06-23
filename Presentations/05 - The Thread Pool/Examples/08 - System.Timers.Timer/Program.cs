@@ -26,10 +26,6 @@ namespace Wincubate.Threading.Module05
             PrintCurrentThread();
         }
 
-        static void OnTimerCallback(object data)
-        {
-        }
-
         static void PrintCurrentThread()
         {
             Thread currentThread = Thread.CurrentThread;

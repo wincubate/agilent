@@ -19,5 +19,12 @@ namespace Wincubate.Threading.Module05
                                $"IsThreadPoolThread: {currentThread.IsThreadPoolThread}");
             return a + b;
         }
+
+        static void PrintCurrentThread()
+        {
+            Thread currentThread = Thread.CurrentThread;
+            Console.WriteLine($"On Thread {currentThread.ManagedThreadId} - " +
+                              $"IsThreadPoolThread: {currentThread.IsThreadPoolThread}");
+        }
     }
 }

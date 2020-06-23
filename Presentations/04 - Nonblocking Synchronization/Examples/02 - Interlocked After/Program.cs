@@ -30,11 +30,12 @@ namespace Wincubate.Threading.Module04
 
             for (int i = 0; i < 50; i++)
             {
-                Interlocked.Increment(ref _counter);
+                int temp = Interlocked.Increment(ref _counter);
 
-                // Interlocked.Read() is not necessary for 32-bit (only for 64-bit)
+                // Interlocked.Read() is not necessary for 32-bit numbers (only for 64-bit numbers)
+                // BUT can always use return values of Interlocked.Increment()
                 Console.WriteLine(
-                    $"Counter = {_counter}. Thread: {Thread.CurrentThread.ManagedThreadId}" 
+                    $"Counter = {temp}. Thread: {Thread.CurrentThread.ManagedThreadId}" 
                 );
 
                 Thread.Sleep(r.Next(10));

@@ -7,8 +7,10 @@ namespace Wincubate.Threading.Module01
     {
         static void Main()
         {
-            Thread t = new Thread(WriteWorld);
-            //t.IsBackground = true;
+            Thread t = new Thread(WriteWorld)
+            {
+                //IsBackground = true
+            };
             t.Start();
         }
 
@@ -18,11 +20,6 @@ namespace Wincubate.Threading.Module01
             {
                 Console.WriteLine(i);
             }
-        }
-
-        static void DeadOrAlive(Thread t)
-        {
-            Console.WriteLine($"Thread {t.ManagedThreadId} is {(t.IsAlive ? "Alive" : "Dead")}");
         }
     }
 }
