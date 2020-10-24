@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wincubate.RepositoryLabs.Domain.Interfaces</AssemblyName>
+    <RootNamespace>Wincubate.RepositoryLabs.Domain.Interfaces</RootNamespace>
+  </PropertyGroup>
+
+</Project>

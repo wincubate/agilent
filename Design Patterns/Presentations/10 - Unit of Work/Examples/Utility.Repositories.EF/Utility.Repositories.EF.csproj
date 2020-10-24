@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Wincubate.UnitOfWorkExamples.Utility.Repositories.EF</AssemblyName>
+    <RootNamespace>Wincubate.UnitOfWorkExamples.Utility.Repositories.EF</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Utility.Repositories\Utility.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>
