@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace WebShop
 {
-    public class ProductRepository
+    public class ProductStorage
     {
         private List<Product> _products;
 
-        public ProductRepository()
+        public ProductStorage()
         {
             _products = new List<Product>
             {

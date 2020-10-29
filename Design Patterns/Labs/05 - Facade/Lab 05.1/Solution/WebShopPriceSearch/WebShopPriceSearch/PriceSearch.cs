@@ -5,14 +5,14 @@ namespace WebShopPriceSearch
 {
     class PriceSearch
     {
-        private readonly WebShop.ProductRepository _productRepository;
-        private readonly WebShop.PriceInfoRepository _priceInfoRepository;
+        private readonly WebShop.ProductStorage _productStorage;
+        private readonly WebShop.PriceInfoStorage _priceInfoStorage;
         private readonly Financial.CurrencyConversionService _currentConversionService;
 
         public PriceSearch()
         {
-            _productRepository = new WebShop.ProductRepository();
-            _priceInfoRepository = new WebShop.PriceInfoRepository();
+            _productStorage = new WebShop.ProductStorage();
+            _priceInfoStorage = new WebShop.PriceInfoStorage();
             _currentConversionService = new Financial.CurrencyConversionService();
         }
 
@@ -20,10 +20,10 @@ namespace WebShopPriceSearch
         {
             // Get all products matching the search name
             IEnumerable<(string ProductName, WebShop.PriceInfo PriceInfoUsd)> infos =
-                _productRepository.GetAll()
+                _productStorage.GetAll()
                     .Where(p => p.Name.ToLower().Contains(searchName.ToLower()))
                     .Select(p =>
-                        (ProductName: p.Name, PriceInfo: _priceInfoRepository.GetById(p.Id))
+                        (ProductName: p.Name, PriceInfo: _priceInfoStorage.GetById(p.Id))
                     );
             
             // Convert each enriched info with the USD->DKK converted price 
